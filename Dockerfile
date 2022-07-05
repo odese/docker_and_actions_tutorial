@@ -11,7 +11,7 @@ WORKDIR /app
 
 COPY ./ ./
 
-RUN go mod init
+# RUN go mod init
 RUN go mod tidy
 
 RUN ls
