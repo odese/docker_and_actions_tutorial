@@ -22,6 +22,11 @@ jobs:
 
       # - name: Test
       #   run: go test -v ./...
+  
+  dockerize:
+    runs-on: ubuntu-latest
+      steps:
+      - uses: actions/checkout@v3
 
       - name: Build and push Docker images
         uses: docker/build-push-action@v3.0.0
