@@ -11,6 +11,8 @@ WORKDIR /app
 
 COPY ./server .
 
+RUN ls
+
 WORKDIR /app/server
 
 RUN go mod init
