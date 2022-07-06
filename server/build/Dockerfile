@@ -11,6 +11,8 @@ WORKDIR /app
 
 COPY ./server .
 
+WORKDIR /app/server
+
 RUN go mod init
 RUN go mod tidy
 
