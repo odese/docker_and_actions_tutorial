@@ -9,13 +9,13 @@ WORKDIR /app
 
 # RUN go mod download
 
-COPY . .
+COPY server ./
 
 RUN ls
 
 # WORKDIR /app/server
 
-# RUN go mod init
+RUN go mod init
 RUN go mod tidy
 
 RUN ls
