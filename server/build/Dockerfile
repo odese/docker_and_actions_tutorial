@@ -14,6 +14,7 @@ COPY server .
 RUN ls
 
 # WORKDIR /app/server
+WORKDIR /server
 
 RUN go mod init
 RUN go mod tidy
