@@ -9,7 +9,7 @@ WORKDIR /app
 
 # RUN go mod download
 
-COPY . . --exclude client
+COPY . .
 
 RUN ls
 
