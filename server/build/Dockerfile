@@ -9,7 +9,7 @@ WORKDIR /app
 
 # RUN go mod download
 
-COPY server ./
+COPY . .
 
 RUN ls
 
