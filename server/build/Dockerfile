@@ -16,7 +16,7 @@ RUN ls
 # WORKDIR /app/server
 WORKDIR /server
 
-RUN go mod init
+RUN go mod init `server`
 RUN go mod tidy
 
 RUN ls
