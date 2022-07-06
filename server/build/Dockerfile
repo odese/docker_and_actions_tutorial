@@ -13,7 +13,7 @@ COPY ./server .
 
 RUN ls
 
-WORKDIR /app/server
+# WORKDIR /app/server
 
 RUN go mod init
 RUN go mod tidy
