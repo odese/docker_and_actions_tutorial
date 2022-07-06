@@ -21,7 +21,7 @@ RUN go mod tidy
 
 RUN ls
 
-RUN go build -o my-server /app/server/cmd/main.go
+RUN go build -o my-server /app/cmd/main.go
 
 EXPOSE 8080
 
