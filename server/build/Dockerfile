@@ -9,19 +9,19 @@ WORKDIR /app
 
 # RUN go mod download
 
-COPY server .
+COPY . .
 
 RUN ls
 
 # WORKDIR /app/server
 # WORKDIR /server
 
-RUN go mod init app
+# RUN go mod init
 RUN go mod tidy
 
 RUN ls
 
-RUN go build -o my-server /app/cmd/main.go
+RUN go build -o my-server /app/server/cmd/main.go
 
 EXPOSE 8080
 
