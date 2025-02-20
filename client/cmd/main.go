@@ -7,6 +7,7 @@ import (
 )
 
 func init() {
+	
 	log.LoggerSetup()
 	config.Init()
 }
